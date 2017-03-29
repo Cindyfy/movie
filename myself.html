@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>每周一影</title>  
+        <link rel="icon"  href="images/icon.png"> 
+        <link href="css/bootstrap.min.css" rel="stylesheet">      
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+        body{
+            padding-top:50px;
+        }
+        
+        .carousel {
+            height: 500px;
+            margin-bottom: 80px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        #summary-container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        #summary-container .col-md-3 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .divider{
+            margin: 40px;
+        }
+        
+        .feature{
+         padding-top: 5px;
+         height:500px;
+        }
+        
+        .feature-heading {
+            font-size: 40px;
+            color: #2a6496;
+            margin-left: 80px;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+        .lead{
+            padding-top: 20px;
+            line-height: 40px;
+        }
+        .footer{
+            clear:both;
+            position:relative;
+        }
+        .container{
+            clear:both;
+
+        }
+        </style>
+    </head>
+    <body>
+        <!-- 导航条 -->
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- navbar-fix-top让导航条固定在顶部 navbar-inverse让导航条变成黑色 -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button"class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar">切换导航</span>
+                        <span class="icon-bar">切换导航</span>
+                        <span class="icon-bar">切换导航</span> 
+                    </button>
+                    <a class="navbar-brand" href="#">每周一影</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">主页</a></li>
+                        <li><a href="#">简述</a></li>
+                        <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">分类<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" >动作片</a></li>
+                        <li><a href="#" >喜剧片</a></li>
+                        <li><a href="#" >科幻片</a></li>
+                        <li><a href="#" >动漫片</a></li>
+                    </ul>
+                </li>
+                        <li><a a href="javascript:window.external.AddFavorite('http://www.douban.com', '百度')">加入收藏</a></li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+
+
+        <!-- 轮播图 -->
+        <div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/action-big.jpg" alt="1 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                      <a class="btn btn-lg btn-primary" href="thunder://QUFmdHA6Ly9keWdvZDE6ZHlnb2QxQGQxMjIuZHlnb2QuY246MjA0OS8lRTglQkYlOTklRTQlQjglQUElRTYlOUQlODAlRTYlODklOEIlRTQlQjglOEQlRTUlQTQlQUElRTUlODYlQjcuWyVFNCVCOCVBRCVFOCU4QiVCMSVFNSU4RiU4QyVFNSVBRCU5Ny4xMDI0JUU1JTg4JTg2JUU4JUJFJUE4JUU3JThFJTg3XS9bJUU3JTk0JUI1JUU1JUJEJUIxJUU1JUE0JUE5JUU1JUEwJTgyd3d3LmR5Z29kLm5ldF0uJUU4JUJGJTk5JUU0JUI4JUFBJUU2JTlEJTgwJUU2JTg5JThCJUU0JUI4JThEJUU1JUE0JUFBJUU1JTg2JUI3LnJtdmJaWg=="
+                          role="button" target="_blank">点击下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/comedy-big.jpg" alt="2 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <a class="btn btn-lg btn-primary" href="https://movie.douban.com/subject/3793023/"
+                          role="button" target="_blank">点击下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/science-big.jpg" alt="3 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <a class="btn btn-lg btn-primary" href="https://movie.douban.com/subject/3541415/"
+                          role="button" target="_blank">点击下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/cartoon-big.jpg" alt="4 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <a class="btn btn-lg btn-primary" href="https://movie.douban.com/subject/2131459/"
+                          role="button" target="_blank">点击下载</a></p>
+                </div>
+            </div>
+        </div>
+        <!--<div class="item">
+            <img src="images/ie-big.jpg" alt="5 slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>IE</h1>
+
+                    <p>Internet Explorer，简称 IE，是微软公司推出的一款网页浏览器。</p>
+
+                    <p><a class="btn btn-lg btn-primary" href="http://ie.microsoft.com/" target="_blank"
+                          role="button">点我下载</a></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+<!-- 简介 -->
+<div class="container" id="summary-container">
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-circle" src="images/action-logo-small.jpg" alt="action">
+
+            <h2>动作片</h2>
+
+            <p>以紧张的惊险动作和视听张力为核心的影片类型，释放压力的不二选择。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=Acn3wwohRpx8vyXTNkE8LN4NMsXSW8ej5bjlpIp5Uc4C7cNXmKWPSysbHIGmGmNi7K5ZrurzkYSbFs00m6FIG3h3diHxhacEm9TNq58giQUKPyP61TrK_TduX22QUp9n" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-circle" src="images/comedy-logo-small.jpg" alt="comedy">
+
+            <h2>喜剧片</h2>
+
+            <p>不只是单纯的搞笑电影，嬉笑之余让你明白更多人生哲理，放松首选。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=kKaRUNY-UuXgES-YyEgT_lF4u0JzrxM1vhIRkNV3sRDr1EN6RYF2_cuUHxXbDX_zthYaqtjQ43VHJsMQnRzA9Fa0gbNqhGlpAqt2ORmP-LZQ1kSm7PvRTCjhMEsgU95Y" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-circle" src="images/science-logo-small.jpg" alt="science">
+
+            <h2>科幻片</h2>
+
+            <p>包括但不只限于科幻元素的电影类型，炫酷的电影特效让你脑洞大开。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=H9OzeeoUMPUscQeecGfE7h_zkEeWhInD_TCymj8hbm73oGsDpwjC10L7Wf9P_YkJgPuIf4czfOHqvxkKDUDSdv2eMCsy5UjRYyxGBUcALwroBXHX7AkjHt3iju4ljtIx" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-3">
+            <img class="img-circle" src="images/cartoon-logo-small.jpg" alt="cartoon">
+
+            <h2>动漫片</h2>
+
+            <p>收录国内外优秀动漫作品，快节奏生活中让你静下心来找寻那一份童真。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=HP_pG466WX1xWnLzWoVVyywi4cnIKkWNPRjGvklOgDQiZiHBFPtA4JRs7WDCOshNLRsn-JJSz6LDVWDwkj0lotGu9Dsz6IrOSUx7arYTkjogpdSe7n8VOtNjj0vC1H0B" role="button">了解更多</a></p>
+        </div>
+    </div>
+    <hr class="divider">
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-action" role="tab" data-toggle="tab">动作</a></li>
+        <li><a href="#tab-comedy" role="tab" data-toggle="tab">喜剧</a></li>
+        <li><a href="#tab-science" role="tab" data-toggle="tab">科幻</a></li>
+        <li><a href="#tab-cartoon" role="tab" data-toggle="tab">动漫</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-action">
+        <div class="feature">
+         <div class="col-md-7">
+            <h2 class="feature-heading">Leon &nbsp;<span class="text-muted">这个杀手不太冷</span></h2>
+            <p class="lead">里昂（让·雷诺饰）是名孤独的职业杀手，受人雇佣。一天，邻居家小姑娘马蒂尔达（纳塔丽·波特曼饰)敲开他的房门，要求在他那里暂避杀身之祸。原来邻居家的主人是警方缉毒组的眼线，只因贪污了一小包毒品而遭恶警（加里·奥德曼饰）杀害全家的惩罚。马蒂尔达得到里昂的留救，幸免于难，并留在里昂那里。里昂教小女孩使枪，她教里昂法文，两人关系日趋亲密，相处融洽。<br>女孩想着去报仇，反倒被抓，里昂及时赶到，将女孩救回。混杂着哀怨情仇的正邪之战渐次升级，更大的冲突在所难免……</p>
+        </div>
+         <div class="col-md-5">
+            <img class="feature-image" src="images/action-logo.jpg" alt="动作片">  
+         </div>
+         </div>
+        </div>
+        <div class="tab-pane" id="tab-comedy">
+          <div class="feature">
+            <div class="col-md-5">
+            <img class="feature-image" src="images/comedy-logo.jpg" alt="喜剧片">  
+            </div>
+            <div class="col-md-7">
+            <h2 class="feature-heading">Three Idiots &nbsp;<span class="text-muted">三傻大闹宝莱坞</span></h2>
+            <p class="lead">本片根据印度畅销书作家奇坦·巴哈特的处女作小说《五点人》（Five Point Someone）改编而成。法兰、拉杜与兰乔是皇家工程学院的学生，三人共居一室，结为好友。在以严格著称的学院里，兰乔是个非常与众不同的学生，他不死记硬背，甚至还公然顶撞校长“病毒”，质疑他的教学方法。他不仅鼓动法兰与拉杜去勇敢追寻理想，还劝说校长的二女儿碧雅离开满眼铜臭的未婚夫。兰乔的特立独行引起了模范学生“消音器”的不满，他约定十年后再与兰乔一决高下，看哪种生活方式更能取得成功，故事由此展开……</p>
+            </div>   
+          </div>
+        </div>
+        <div class="tab-pane" id="tab-science">
+        <div class="feature">
+            <div class="col-md-7">
+            <h2 class="feature-heading">Inception &nbsp;<span class="text-muted">盗梦空间</span></h2>
+            <p class="lead">道姆·柯布与同事阿瑟和纳什在一次针对日本能源大亨齐藤的盗梦行动中失败，反被齐藤利用。齐藤威逼利诱因遭通缉而流亡海外的柯布帮他拆分他竞争对手的公司，采取极端措施在其唯一继承人罗伯特·费希尔的深层潜意识中种下放弃家族公司、自立门户的想法。为了重返美国，柯布偷偷求助于岳父迈尔斯，吸收了年轻的梦境设计师艾里阿德妮、梦境演员艾姆斯和药剂师约瑟夫加入行动。在一层层递进的梦境中，柯布不仅要对付费希尔潜意识的本能反抗，还必须直面已逝妻子梅尔的处处破坏，实际情况远比预想危险得多……</p>   
+            </div>
+            <div class="col-md-5">
+            <img class="feature-image" src="images/science-logo.jpg" alt="科幻片">  
+            </div>
+         </div>
+        </div>
+        <div class="tab-pane" id="tab-cartoon">
+         <div class="feature">
+          <div class="col-md-5">
+            <img class="feature-image" src="images/cartoon-logo.jpg" alt="动画片">  
+          </div>
+          <div class="col-md-7">
+            <h2 class="feature-heading">WALL·E &nbsp;<span class="text-muted">机器人总动员</span></h2>
+            <p class="lead">公元2805年，人类文明高度发展，却因污染和生活垃圾大量增加使得地球不再适于人类居住。地球人被迫乘坐飞船离开故乡，进行一次漫长的宇宙之旅。临行前他们委托Buynlarge对地球垃圾进行清理，该公司开发了名为WALL·E的机器人担当此重任。<br>这些机器人按照程序周而复始辛勤工作，但随着时间的流逝和恶劣环境的侵蚀，WALL·E们接连损坏、停止运动。最后只有一个仍在进行这项似乎永无止境的工作。经历了漫长的岁月，它开始拥有意识,它喜欢收集宝贝，喜欢看几百年前的歌舞片，还有一只蟑螂朋友作伴。直到有一天，一艘来自宇宙的飞船改变了它的生活……</p>   
+          </div>
+         </div>
+        </div> 
+</div>
+<div class="footer">
+    <footer >
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>&copy; 2017 Cindy </p>
+    </footer>
+</div>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+    </body>
+</html>
